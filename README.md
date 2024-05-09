@@ -236,8 +236,16 @@ from .models import Task
 admin.site.register(Task)
 ```
 
-2. Accede a Django Admin para gestionar las tareas y otros modelos registrados.
+2. Crear superusuario en Django.
 
+```bash
+python manage.py createsuperuser
+
+# Registro de superusuario
+# User: Admin
+# E-mail: example@gmail.com
+# Password: 12345
+```
 
 ---
 

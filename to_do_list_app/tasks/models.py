@@ -10,7 +10,7 @@ class Task(models.Model):
         ('completed', 'Completado'),
     ]
     status = models.CharField(max_length=20, choices=STATUS_CHOICES)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return self.title
